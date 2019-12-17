@@ -74,4 +74,9 @@ describe "#translate" do
     expect(s).to eq("Ethay ickquay ownbray Oxfay")
   end
 
+  it "punctuation" do
+    s = translate("Hey! The quick brown fox.")
+    expect(s).to eq("Eyhay! Ethay ickquay ownbray oxfay.")
+  end
+
 end
